@@ -5,7 +5,7 @@ var PORT = process.env.PORT || 4000;
  
 app.get('/:timestamp', function(request, response) {
   var timestamp = request.params.timestamp;
-  response.send('Timestamp: ' + timestamp);
+  response.json(getTimestampJSON(timestamp));
 });
  
 app.listen(PORT, function() {
@@ -30,4 +30,10 @@ function getTimestampJSON(timestamp) {
 	}
     
 	return result;
+}
+
+function getNaturalDate(date) {
+	var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'Obtober', 'November', 'December'];
+ 
+	return months[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear();
 }
