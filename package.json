@@ -1,0 +1,26 @@
+{
+  "name": "time-stamp-project",
+  "version": "1.0.0",
+  "description": "time stamp project for FreeCodeCamp",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unHACKINGgod/time-stamp-project.git"
+  },
+  "keywords": [
+    "time-stamp"
+  ],
+  "author": "agboola olasunkanmi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unHACKINGgod/time-stamp-project/issues"
+  },
+  "homepage": "https://github.com/unHACKINGgod/time-stamp-project#readme",
+  "dependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
